@@ -12,7 +12,7 @@ export default function VerifyEmailPage() {
 
     const verifyUserEmail = async () => {
         try {
-            await axios.post(`${process.env.FRONT_END_URL}/api/users/verifyemail`, { token })
+            await axios.post(`https://nextuserauth.netlify.app/api/users/verifyemail`, { token })
             setVerified(true);
         }
 
