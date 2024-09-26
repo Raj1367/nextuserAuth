@@ -140,7 +140,7 @@ const UserProfile = () => {
                                                     <p>{data.isVerified ? "verified" : "not-verified"}</p>
                                                 </div>
                                                 <div>
-                                                    {!data.isVerified && (<Link href={`${process.env.FRONT_END_URL}/verifyemail?token=${data.verifyToken}`}><p className="text-blue-500 text-sm" >verify now</p></Link>)}
+                                                    {!data.isVerified && (<Link href={`https://nextuserauth.netlify.app/verifyemail?token=${data.verifyToken}`}><p className="text-blue-500 text-sm" >verify now</p></Link>)}
                                                 </div>
                                             </div>
 
