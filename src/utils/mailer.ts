@@ -10,7 +10,7 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
 
         const htmlForVerifyToken = `<p>Click <a href="https://nextuserauth.netlify.app/verifyemail?token=${hashedToken}">here</a> 
         to verify your email or copy paste the link in your browser <br> 
-        ${process.env.FRONT_END_URL}/verifyemail?token=${hashedToken}</p>`
+        https://nextuserauth.netlify.app/verifyemail?token=${hashedToken}</p>`
 
         const htmlForForgotPassword = `<p>Click <a href="${process.env.FRONT_END_URL}/forgotpasword?token=${hashedToken}">here</a> 
         to reset your password or copy paste the link in your browser <br> 
