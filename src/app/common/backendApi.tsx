@@ -1,6 +1,6 @@
 
 
-const backendUrl = "http://localhost:3000"
+const backendUrl = "https://nextuserauth.netlify.app"
 
 const backendApi = {
 
