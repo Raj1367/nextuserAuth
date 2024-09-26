@@ -47,7 +47,7 @@ export default function VerifyEmailPage() {
                 {verified && (
                     <div className="mt-4 flex flex-col gap-3">
                         <h2 className="text-2xl">Email Verified</h2>
-                        <Link href="/userprofile">got back to profile</Link>
+                        <Link href="/login">got back to login</Link>
                     </div>
                 )}
 
