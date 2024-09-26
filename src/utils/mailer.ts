@@ -8,7 +8,7 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
 
         const hashedToken = await bcrypt.hash(userId.toString(), 10)
 
-        const htmlForVerifyToken = `<p>Click <a href="${process.env.FRONT_END_URL}/verifyemail?token=${hashedToken}">here</a> 
+        const htmlForVerifyToken = `<p>Click <a href="https://nextuserauth.netlify.app/verifyemail?token=${hashedToken}">here</a> 
         to verify your email or copy paste the link in your browser <br> 
         ${process.env.FRONT_END_URL}/verifyemail?token=${hashedToken}</p>`
 
